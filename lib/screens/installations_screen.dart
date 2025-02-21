@@ -1,4 +1,3 @@
-// lib/screens/installations_screen.dart
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import 'installation_detail_screen.dart';
@@ -13,7 +12,6 @@ class InstallationsScreen extends StatefulWidget {
 class _InstallationsScreenState extends State<InstallationsScreen> {
   List<dynamic> _instalaciones = [];
   bool _isLoading = true;
-  // Suponiendo que el id del técnico se obtiene de algún lugar (ej: provider, prefs)
   // Para demo, usaré un id fijo:
   int tecnicoId = 1;
 

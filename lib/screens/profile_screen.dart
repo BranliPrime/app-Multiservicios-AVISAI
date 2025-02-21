@@ -12,7 +12,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   TextEditingController apellidoController = TextEditingController(text: "Mamani");
   TextEditingController contactoController = TextEditingController(text: "987654321");
 
-  // Guardar los valores originales para cancelar cambios
+
   late String originalNombre;
   late String originalApellido;
   late String originalContacto;
@@ -35,7 +35,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
   void cancelEdit() {
     setState(() {
       isEditing = false;
-      // Restaurar valores originales
       nombreController.text = originalNombre;
       apellidoController.text = originalApellido;
       contactoController.text = originalContacto;
@@ -74,7 +73,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🔹 Foto de perfil y datos personales
+            // Foto de perfil y datos personales
             Row(
               children: [
                 ClipOval(
@@ -97,14 +96,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             const SizedBox(height: 20),
 
-            // 🔹 Campos de información
+            //  Campos de información
             _buildField("Nombre", nombreController),
             _buildField("Apellido", apellidoController),
             _buildField("Contacto", contactoController),
 
             const SizedBox(height: 20),
 
-            // 🔹 Botones Editar/Guardar/Cancelar
             Center(
               child: isEditing
                   ? Row(

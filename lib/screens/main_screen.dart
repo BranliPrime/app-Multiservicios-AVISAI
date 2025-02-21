@@ -8,13 +8,13 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int _selectedIndex = 2; // Perfil como pantalla inicial
+  int _selectedIndex = 2; 
 
   final List<Widget> _screens = [
-    Center(child: Text("Inicio")),  // Pantalla de inicio (puedes reemplazarla)
-    Center(child: Text("Calendario")),  // Pantalla de calendario
-    ProfileScreen(),  // Pantalla de perfil
-    NotificationsScreen(),  // Pantalla de notificaciones
+    Center(child: Text("Inicio")),  
+    Center(child: Text("Calendario")), 
+    ProfileScreen(),  
+    NotificationsScreen(),  
   ];
 
   void _onItemTapped(int index) {

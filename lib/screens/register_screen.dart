@@ -1,4 +1,3 @@
-// lib/screens/register_screen.dart
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 
@@ -70,7 +69,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           isLoading = false;
                         });
                       } else {
-                        // Registro exitoso
+
                         setState(() {
                           isLoading = false;
                         });

@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-// 🔹 Contenido principal de la pantalla de inicio
+// Contenido principal de la pantalla de inicio
 class HomeContent extends StatelessWidget {
   final Map<String, dynamic>? user;
 
@@ -67,7 +67,7 @@ class HomeContent extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🔹 Barra de búsqueda
+
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
@@ -84,7 +84,7 @@ class HomeContent extends StatelessWidget {
             ),
             const SizedBox(height: 10),
 
-            // 🔹 Banner
+
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Image.asset('lib/assets/images/banner.png', fit: BoxFit.cover),
@@ -95,7 +95,6 @@ class HomeContent extends StatelessWidget {
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 10),
 
-            // 🔹 Botones de filtro
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -106,7 +105,7 @@ class HomeContent extends StatelessWidget {
             ),
             const SizedBox(height: 10),
 
-            // 🔹 Lista de instalaciones
+
             Expanded(
               child: GridView.count(
                 crossAxisCount: 2,
